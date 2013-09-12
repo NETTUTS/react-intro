@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>NetTuts+ React Article</title>
+
+  <style>
+    body {
+      background: white;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+
+    }
+    .editor {
+      border: 1px solid blue;
+      width: 500px;
+      height: 300px;
+      position: absolute;
+      font-size: 14px;
+
+      padding: 5px;
+    }
+
+    .shape-canvas {
+      position: absolute;
+      left: 540px;
+      border: 1px solid #CCC;
+      width: 400px;
+      height: 400px;
+      padding: 10px;
+    }
+    .no-shapes {
+      text-shadow: 1px 1px 3px #ff4648;
+    }
+
+    .shapes-picker {
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    .shape {
+      -webkit-transition: all 0.25s;
+    }
+  </style>
+</head>
+<body>
+<select class="shapes-picker">
+  <option value="--">-- Select a sample --</option>
+  <option value="react">React</option>
+  <option value="robot">Robot</option>
+</select>
+<div class="container"></div>
+
+<!-- Libraries -->
+<script src="../../lib/jquery-2.0.3.min.js"></script>
+<script src="../../lib/react.js"></script>
+
+
+<!-- Application Scripts -->
+<script src="../../build/shape-editor/ShapePropertyMixin.js"></script>
+<script src="../../build/shape-editor/shapes/Ellipse.js"></script>
+<script src="../../build/shape-editor/shapes/Rectangle.js"></script>
+<script src="../../build/shape-editor/shapes/Text.js"></script>
+
+<script src="../../build/shape-editor/ShapeParser.js"></script>
+<script src="../../build/shape-editor/ShapeCanvas.js"></script>
+<script src="../../build/shape-editor/ShapeEditor.js"></script>
+
+<script src="../../build/shape-editor/shapes.js"></script>
+<script src="../../build/shape-editor/app.js"></script>
+</body>
+</html>
